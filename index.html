@@ -59,47 +59,108 @@
     
   </div>
   <div class="row">
-  	<hr />
+  
   	<div id="cv" class="col-sm">
 			
-  	<p class="cv-paragraph">
-  	  Hair: brown<br />
-  	  Eyes: blue<br />
-  	  Height: 5'10"</p>
+		<div class="cv-section">		
+			<h3 class="cv-header">Appearance</h3>		
+				<p class="cv-content">
+				  Hair: brown<br />
+				  Eyes: blue<br />
+				  Height: 5'10"</p>
+		</div>
 	
-  	<h3 class="cv-header">Theatre Credits</h3>
-  	<ul>
-  		<li>Six Degrees of Sondheim			Soloist			Neighborhood Playhouse, Douglas J. Cohen</li>
-  	</ul>
+		<div class="cv-section">
+			<h3 class="cv-header">Theatre Credits</h3>
+			<table>
+				<tbody>
+					<tr>
+						<th>Production</th>
+						<th>Role</th>
+						<th>Venue(s)</th>
+						<th>Reviews</th>
+					</tr>
+					<tr>
+						<td>Six Degrees of Sondheim</td>
+						<td>Soloist</td>
+						<td>Neighborhood Playhouse, Douglas J. Cohen</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Government Inspector</td>
+						<td>Khlestakov (Lead)</td>
+						<td>Bridwell Theatre, London and Zoo Venues, Edinburgh Festival </td>
+						<td><a href="https://broadwaybaby.com/shows/government-inspector/702198">broadwaybaby.com</a></td>
+					</tr>
+					<tr>
+						<td>Candide</td>
+						<td>James</td>
+						<td>Bridewell Theatre</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Man of La Mancha</td>
+						<td>The Captain/Paco</td>
+						<td>Bridewell Theatre</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Monster in the Maze (Opera)	</td>
+						<td>Chorus</td>
+						<td>Barbican Hall London</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Devils</td>
+						<td>Father Mignon</td>
+						<td>Bridewell Theatre</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Victor/Victoria</td>
+						<td>Ensemble</td>
+						<td>Bridewell Theatre</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+					
+		<div class="cv-section">			
+			<h3 class="cv-header">Training</h3>
+			<p class="cv-paragraph">The Neighborhood Playhouse School of the Theatre 2 YR Conservatory, Graduating Class of 2019</p>
+			<ul>
+				<li>Meisner 2nd Year: John Tyrrell</li>
+				<li>Meisner 1s Year Acting: Gary Kingston</li>
+				<li>Meisner Rehearsal: Ron Stetson, Sandy Faison, John Tyrrell</li> 
+				<li>On Camera: Todd Susman</li>
+				<li>Voice & Speech: Gary Ramsey, Colleen Smith Wallnau</li>
+				<li>Shakespeare: Sean Hagerty</li>
+				<li>Song Interpretation: Douglas J. Cohen</li>
+				<li>Classical Voice Training: Andrea DelGuidice, Devony Smith</li>
+				<li>Movement: Christine Dakin (Modern), Gary Gendell (Jazz)</li>
+				<li>Physical Theatre: Megan Campisi, Blake Habermann</li>
+				<li>Alexander Technique: Elizabeth Reese</li>
+				<li>Stage Combat: Brad Lemons</li>	
+			</ul>
+		</div>
 	
-  	<h3 class="cv-header">Training</h3>
-  	<p class="cv-paragraph">The Neighborhood Playhouse School of the Theatre 2 YR Conservatory, Graduating Class of 2019</p>
-  	<ul>
-  		<li>Meisner 2nd Year: John Tyrrell</li>
-  		<li>Meisner 1s Year Acting: Gary Kingston</li>
-  		<li>Meisner Rehearsal: Ron Stetson, Sandy Faison, John Tyrrell</li> 
-  		<li>On Camera: Todd Susman</li>
-  		<li>Voice & Speech: Gary Ramsey, Colleen Smith Wallnau</li>
-  		<li>Shakespeare: Sean Hagerty</li>
-  		<li>Song Interpretation: Douglas J. Cohen</li>
-  		<li>Classical Voice Training: Andrea DelGuidice, Devony Smith</li>
-  		<li>Movement: Christine Dakin (Modern), Gary Gendell (Jazz)</li>
-  		<li>Physical Theatre: Megan Campisi, Blake Habermann</li>
-  		<li>Alexander Technique: Elizabeth Reese</li>
-  		<li>Stage Combat: Brad Lemons</li>	
-  	</ul>
+		<div class=cv-section>
+			<h3 class="cv-header">Education</h3>
+		</div>
 	
-  	<h3 class="cv-header">Education</h3>
-	
-  	<h3 class="cv-header">Skills</h3>
-  	<p class="cv-paragraph">Trained as a lawyer in London.<br />
-  Strong voice with Received Pronunciation, General American and a wide range of accents.<br />
-  Performed as part of improvisation shows in West End comedy clubs.<br />
-  Certified in all areas of Stage Combat (AAFD)<br />
-  Baritone has performed as a classical soloist in demonstrations and been cast in several musicals.<br />
-  Physically fit and enjoys aerial acrobatics and dancing.</p>
-	
-  </div>
+		<div class="cv-section">
+			<h3 class="cv-header">Skills</h3>        
+			<ul>
+				<li>Trained as a lawyer in London</li>
+				<li>Strong voice with Received Pronunciation, General American and a wide range of accents</li>
+				<li>Performed as part of improvisation shows in West End comedy clubs</li>
+				<li>Certified in all areas of Stage Combat (AAFD)</li>
+				<li>Baritone has performed as a classical soloist in demonstrations and been cast in several musicals</li>
+			   <li>Physically fit and enjoys aerial acrobatics and dancing.</li>
+			</ul>
+		</div>
+	</div>
   
 </div>
 	
@@ -144,16 +205,16 @@
 		
 		$('#contact').text('').append('<a href=mailto:benjamin.press' + '@' + 'gmail.com">benjamin.press'+'@'+'gmail.com</a>');
 		
-		$('ul', '#cv').hide();
+		$('.cv-section').children().not('h3').hide();
 		
 		$('.cv-header').click(function(e){
-			$('ul', '#cv').toggle();
+			$(e.target).toggleClass('active').siblings().toggle();
 		});
 		
 		$('a.dropdown-item', 'li.dropdown').click(function(e) {
 			
 			var title = $(e.target).text(); 
-			var href = $(e.target).attr('href'); console.log(href);
+			var href = $(e.target).attr('href');
 			e.preventDefault();
 			$.ajax({
 			    url: href,
