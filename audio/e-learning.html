@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>Benjamin Press - Voice - E-learning</title>
+  <link rel="stylesheet" href="/audio/howler/styles.css">
+</head>
+<body>
+  <!-- Top Info -->
+  <div id="title">
+    <span id="track"></span>
+    <div id="timer">0:00</div>
+    <div id="duration">0:00</div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controlsOuter">
+    <div class="controlsInner">
+      <div id="loading"></div>
+      <div class="btn" id="playBtn"></div>
+      <div class="btn" id="pauseBtn"></div>
+    </div>
+    <div class="btn" id="volumeBtn"></div>
+  </div>
+
+  <!-- Progress -->
+  <div id="waveform"></div>
+  <div id="bar"></div>
+  <div id="progress"></div>
+
+ <!-- Playlist -->
+  <div id="playlist">
+    <div id="list"></div>
+  </div>
+
+
+  <!-- Volume -->
+  <div id="volume" class="fadeout">
+    <div id="barFull" class="bar"></div>
+    <div id="barEmpty" class="bar"></div>
+    <div id="sliderBtn"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const src='/audio/files/benjaminpress-e-learning.mp3';
+    const title='E-learning';
+  </script>
+  <script>src='/audio/files/benjaminpress-e-learning.mp3'</script>
+  <script src="/audio/howler/howler.core.js"></script>
+  <script src="/audio/howler/siriwave.js"></script>
+  <script src="/audio/howler/player.js"></script>
+</body>
+</html>

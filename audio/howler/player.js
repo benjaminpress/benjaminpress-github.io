@@ -55,7 +55,7 @@ Player.prototype = {
       sound = data.howl;
     } else {
       sound = data.howl = new Howl({
-        src: ['/audio/files/benjaminpress-audiobook.mp3'],
+        src: [src],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function() {
           // Display the duration.
@@ -272,7 +272,7 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'Audiobook',
+    title: title,
     file: 'benjaminpress-audiobook',
     howl: null
   }
