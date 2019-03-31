@@ -171,6 +171,10 @@
 	
 	$(document).ready(function(){ 
 		
+		$('button.close').click(function(e){
+		  $('div.modal-body').empty();
+		});
+		
 		$('#contact').text('').append('<a href=mailto:benjamin.press' + '@' + 'gmail.com">benjamin.press'+'@'+'gmail.com</a>');
 		
 		$('.cv-section').children().not('h3').hide();
@@ -198,7 +202,7 @@
 					else if (href.indexOf('audio') === 1) {
 						
 						$('<iframe />');  // Create an iframe element
-                   modalContent =  $('<iframe />', {
+                        modalContent =  $('<iframe />', {
                         name: 'frame1',
                         id: 'audio-player',
                         src: href,
