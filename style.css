@@ -43,7 +43,9 @@ h1 {
 h2 {
 	font-size: 1.2rem;
 }
-
+#contact {
+    margin-bottom: 0;
+}
 td, th {
 	padding: 1rem 1.5rem;
 }
