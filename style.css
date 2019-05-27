@@ -3,6 +3,11 @@ body {
 	overflow-y: scroll;
 }
 
+.navbar-nav .nav-link {
+     color: #000;
+     font-size: 1.3rem;  
+}
+
 .navbar, .navbar-inverse {
 	border-radius: 0;
 	border: none;
