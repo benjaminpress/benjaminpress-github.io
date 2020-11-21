@@ -39,7 +39,7 @@ body {
 	width:100%;
 }
 
-h1, h2, #contact {
+h1, h2, #contact, #spotlight {
 	text-align: center;
 }
 h1 {
@@ -48,7 +48,7 @@ h1 {
 h2 {
 	font-size: 1.2rem;
 }
-#contact {
+#contact, #spotlight {
     margin-bottom: 0;
 }
 td, th {
