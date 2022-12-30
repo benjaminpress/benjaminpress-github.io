@@ -27,6 +27,8 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		            <a class="dropdown-item" href="/gallery/show-h-shots.html">Head shots</a>
+                    <a class="dropdown-item" href="/gallery/the-accountant.html">The Accountant</a>
+                    <a class="dropdown-item" href="/gallery/the-worst-person-i-know.html">The Worst Person</a>
 		            <a class="dropdown-item" href="/gallery/candide.html">Candide</a>
 		            <a class="dropdown-item" href="/gallery/devils.html">The Devils</a>
 					<a class="dropdown-item" href="/gallery/government-inspector.html">Government Inspector</a>
@@ -302,7 +304,7 @@
 			var embedCode = '<iframe width="560" height="315" src="https://www.youtube.com/embed/_H_m19xa9Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 			e.preventDefault();
 
-			if (href.indexOf('video') === 1) {
+			if (typeof href!== 'undefined' && href.indexOf('video') === 1) {
 						$('#main-headshot-wrapper').html(embedCode);
 						//  modalContent =  $(embedCode);
 						  //console.log(modalContent.width());
@@ -318,12 +320,12 @@
 					$('.modal-content').removeAttr('style');
 					
 					
-					if (href.indexOf('gallery') === 1) {
+					if (typeof href!== 'undefined' && href.indexOf('gallery') === 1) {
 						images = $(data).find('img');
 						modalContent = $(data).find('#carouselExampleControls');
 					    $('#main-headshot-wrapper').html(modalContent);
 					}
-					else if (href.indexOf('audio') === 1) {
+					else if (typeof href!== 'undefined' && href.indexOf('audio') === 1) {
 						
 						iframe = $('<iframe src="'+href+'" />');  // Create an iframe element
                          // modalContent =  $('<iframe />', {
